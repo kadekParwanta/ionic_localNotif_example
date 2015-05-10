@@ -1,11 +1,12 @@
 ## Note
-The Cordova local notification plugin only works on cordova 3.7.1
+The local notification plugin only works on cordova 3.7.1
 
 ## Instructions
 [Download][zip] or clone the master branch and run the following command:
 
 ```bash
 ionic platform add android@3.7.1
+cordova plugin add de.appplant.cordova.plugin.local-notification
 ionic build android
 ionic run android
 ```
@@ -19,7 +20,7 @@ This software is released under the [Apache 2.0 License][apache2_license].
 
 [cordova]: https://cordova.apache.org
 [readme]: https://github.com/katzer/cordova-plugin-local-notifications/blob/master/README.md
-[zip]: https://github.com/katzer/cordova-plugin-local-notifications/archive/example.zip
+[zip]: https://github.com/kadekParwanta/ionic_localNotif_example/archive/master.zip
 [xcode]: https://developer.apple.com/xcode/
 [vsexpress]: https://www.visualstudio.com/en-us/products/visual-studio-express-vs.aspx
 [studio]: https://developer.android.com/sdk/installing/studio.html
