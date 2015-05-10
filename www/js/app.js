@@ -36,11 +36,11 @@ angular.module('starter', ['ionic', 'ngCordova'])
 .controller("MainCtrl", function($scope, $cordovaLocalNotification) {
  
     $scope.add = function() {
-        var alarmTime = new Date();
-        alarmTime.setMinutes(alarmTime.getMinutes() + 1);
+        var now = new Date().getTime(),
+                    _5_sec_from_now = new Date(now + 5 * 1000);
         $cordovaLocalNotification.add({
             id: "1234",
-            date: alarmTime,
+            date: _5_sec_from_now,
             message: "This is a message",
             title: "This is a title",
             autoCancel: true,
